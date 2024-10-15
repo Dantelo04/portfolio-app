@@ -10,7 +10,7 @@ interface CardProps {
 
 export default function Card({href, className, children, newTab, color}: CardProps){
     return(
-        <div className={className + ` flex rounded-3xl relative p-2 bg-gradient-to-tl ${color ? color : "from-neutral-950 to-neutral-900"} border border-neutral-900 flex-shrink-0 h-auto w-auto`}>
+        <div className={className + ` flex rounded-3xl relative p-2 bg-gradient-to-tl ${color ? color : "from-neutral-950 to-neutral-900"} border backdrop-blur-md border-neutral-900 flex-shrink-0 h-auto w-auto`}>
             {children}
             {newTab ?
                 (
