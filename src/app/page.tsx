@@ -1,8 +1,13 @@
+"use client"
+
 import Card from "@/components/Card";
 import Link from "next/link";
 import { CgArrowRight } from "react-icons/cg";
 import Image from "next/image";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaCss3Alt, FaGithub, FaHtml5, FaJava, FaLinkedin, FaPython } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { SiOdoo } from "react-icons/si";
+import { RiJavascriptFill } from "react-icons/ri";
 
 
 export default function Home() {
@@ -82,8 +87,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex w-full grow xl:h-full">
-          <Card className="w-full bg-gradient-to-tl border-gray-950" color="from-purple-950 relative-card to-gray-800" href="https://definetec.com.py/" newTab={true}>
+        <div className="flex xl:flex-row flex-col gap-4 w-full grow xl:h-full">
+          <Card className="xl:grow xl:w-fit w-full bg-gradient-to-tl relative border-gray-950" color="from-purple-950 relative-card to-gray-800" href="https://definetec.com.py/" newTab={true}>
             <div className="flex xl:flex-row flex-col space-y-5 xl:space-x-6 xl:space-y-0 p-5 items-center max-w-full xl:justify-center xl:h-64 justify-center w-full">
               <div className="xl:flex flex-col hidden w-full text-start justify-center px-1 xl:space-y-3 space-y-2 rounded max-w-full">
                 <div className="text-neutral-100/50 uppercase">
@@ -115,12 +120,18 @@ export default function Home() {
                   as a full-time fullstack developer
                 </div>
               </div>
+              <motion.div className="flex xl:hidden flex-col items-center w-full xl:absolute bottom-4 right-9">
+                <div className="inline-flex gap-5 items-center justify-center w-full">
+                  <SiOdoo className="w-20 h-20"/>
+                  <FaPython className="w-10 h-10"/>
+                  <FaHtml5 className="w-10 h-10"/>
+                  <FaCss3Alt className="w-10 h-10"/>
+                </div>
+              </motion.div>
             </div>
           </Card>
-        </div>
 
-        <div className="flex w-full grow xl:h-full">
-          <Card color="from-indigo-900 to-gray-800" className="w-full bg-gradient-to-tl relative-card border-gray-800 border-0" href="https://www.pol.una.py/" newTab={true}>
+          <Card color="from-indigo-900 to-gray-800" className="xl:grow xl:w-fit w-full bg-gradient-to-tl relative-card border-gray-800 border-0" href="https://www.pol.una.py/" newTab={true}>
             <div className="flex xl:flex-row flex-col space-y-5 xl:space-x-6 xl:space-y-0 p-5 items-center max-w-full xl:justify-center xl:h-64 justify-center w-full">
               <div className="xl:flex flex-col hidden w-full text-start justify-center px-1 xl:space-y-3 space-y-2 rounded max-w-full">
               <div className="text-neutral-100/50 uppercase">
@@ -152,13 +163,23 @@ export default function Home() {
                   to become a software engineer
                 </div>
               </div>
+              <motion.div className="flex xl:hidden flex-col items-center w-full xl:absolute bottom-4 right-9">
+                <div className="inline-flex gap-5 items-center justify-center">
+                  <FaPython className="w-10 h-10"/>
+                  <FaHtml5 className="w-10 h-10"/>
+                  <FaJava className="w-10 h-10"/>
+                  <RiJavascriptFill className="w-10 h-10"/>
+                </div>
+              </motion.div>
             </div>
           </Card>
         </div>
 
-        {/* <div className="flex xl:flex-row flex-col space-y-4 xl:space-y-0 w-full xl:space-x-4 xl:h-72">
-          
-        </div> */}
+        <div className="w-full">
+          <Card className="w-full min-h-72">
+            <div></div>
+          </Card>
+        </div>
 
         <div className="flex xl:flex-row flex-col space-y-4 xl:space-y-0 w-full xl:space-x-4 xl:h-72">
           <Card className="h-full xl:aspect-square relative-card bg-gradient-to-r border-0">
