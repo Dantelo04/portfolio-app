@@ -83,7 +83,7 @@ export default function Home() {
         </div>
 
         <div className="flex w-full grow xl:h-full">
-          <Card className="w-full bg-gradient-to-tl border-gray-950" color="from-purple-950 to-gray-800" href="https://definetec.com.py/" newTab={true}>
+          <Card className="w-full bg-gradient-to-tl border-gray-950" color="from-purple-950 relative-card to-gray-800" href="https://definetec.com.py/" newTab={true}>
             <div className="flex xl:flex-row flex-col space-y-5 xl:space-x-6 xl:space-y-0 p-5 items-center max-w-full xl:justify-center xl:h-64 justify-center w-full">
               <div className="xl:flex flex-col hidden w-full text-start justify-center px-1 xl:space-y-3 space-y-2 rounded max-w-full">
                 <div className="text-neutral-100/50 uppercase">
@@ -120,7 +120,7 @@ export default function Home() {
         </div>
 
         <div className="flex w-full grow xl:h-full">
-          <Card color="from-indigo-900 to-gray-800" className="w-full bg-gradient-to-tl  border-gray-800 border-0" href="https://www.pol.una.py/" newTab={true}>
+          <Card color="from-indigo-900 to-gray-800" className="w-full bg-gradient-to-tl relative-card border-gray-800 border-0" href="https://www.pol.una.py/" newTab={true}>
             <div className="flex xl:flex-row flex-col space-y-5 xl:space-x-6 xl:space-y-0 p-5 items-center max-w-full xl:justify-center xl:h-64 justify-center w-full">
               <div className="xl:flex flex-col hidden w-full text-start justify-center px-1 xl:space-y-3 space-y-2 rounded max-w-full">
               <div className="text-neutral-100/50 uppercase">
@@ -161,7 +161,7 @@ export default function Home() {
         </div> */}
 
         <div className="flex xl:flex-row flex-col space-y-4 xl:space-y-0 w-full xl:space-x-4 xl:h-72">
-          <Card className="h-full glow xl:aspect-square grow bg-gradient-to-r border-0">
+          <Card className="h-full xl:aspect-square relative-card bg-gradient-to-r border-0">
             <div className="flex xl:flex-row flex-col space-y-4 xl:space-y-0 xl:space-x-4 p-4 w-full">
               <div className="flex flex-col p-10 space-y-4 items-center justify-center grow rounded-2xl">
                 <div className="xl:text-8xl text-8xl font-extrabold">
