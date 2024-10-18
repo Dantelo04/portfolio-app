@@ -12,7 +12,7 @@ export default function Navbar(){
     const [isOpen, setOpen] = useState(true)
 
     return(
-        <div className={isOpen ? "flex xl:flex-row flex-col xl:space-y-0 space-y-5 fixed justify-between items-center h-auto xl:p-5 xl:py-5 py-1 xl:px-4 top-0 xl:w-full w-full z-50 duration-100 bg-black/0 transition-all" : "flex xl:flex-row flex-col xl:space-y-0 space-y-7 fixed items-center transition-all h-screen xl:p-5 py-5 px-4 top-0 xl:w-9/12 w-full z-40 justify-start backdrop-blur-xl bg-black/50 duration-100"}>
+        <div className={isOpen ? "flex xl:flex-row flex-col xl:space-y-0 space-y-5 fixed justify-between items-center h-auto xl:p-5 xl:py-5 py-1 xl:px-4 px-2 top-0 xl:w-full w-full z-50 duration-100 bg-black/0 transition-all" : "flex xl:flex-row flex-col xl:space-y-0 space-y-7 fixed items-center transition-all h-screen xl:p-5 py-5 px-4 top-0 xl:w-9/12 w-full z-40 justify-start backdrop-blur-xl bg-black/50 duration-100"}>
             <div className={`flex flex-row text-xl items-center font-mono text-white xl:w-fit w-full xl:border-0 border border-neutral-700/50 duration-100 xl:p-0 p-2 px-4 transition-all rounded ${isOpen ? "backdrop-blur-lg border-neutral-700/50":"backdrop-blur-sm border-neutral-700/0"} xl:backdrop-blur-0 justify-between`}>
                 <div>
                     dante<span className="text-neutral-500">, fullstack</span>
