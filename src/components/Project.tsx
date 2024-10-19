@@ -1,14 +1,16 @@
 import Image from "next/image"
 import { FaArrowRightLong } from "react-icons/fa6"
-import { SiFastapi, SiNextdotjs } from "react-icons/si"
 
 
 interface ProjectProps {
     title?:string,
     description?:string,
+    children?: React.ReactNode,
+    href?:string,
+    src?:string,
 }
 
-export default function Project({title,description}:ProjectProps){
+export default function Project({title,description,children,href,src}:ProjectProps){
     return(
         <div className="w-full min-h-32 rounded bg-white border-neutral-400 text-neutral-800">
             <div className="flex flex-col">
@@ -24,26 +26,24 @@ export default function Project({title,description}:ProjectProps){
                     {title}
                 </div>
                 <div className="relative overflow-hidden p-1">
-                    <Image
-                        src={"/yvyryryi.png"}
-                        alt={"controls"}
-                        width={718}
-                        height={241}
-                        className="h-auto bg-cover w-full rounded-md"
-                    />
-                    <div className="absolute flex justify-center items-center top-0 right-0 h-full w-full">
-
-                    </div>
+                    <a href={href} target="_blank" className="hover:brightness-125 duration-200">
+                        <Image
+                            src={src!}
+                            alt={"project_image"}
+                            width={718}
+                            height={241}
+                            className="h-auto bg-cover w-full rounded-md"
+                        />
+                    </a>
                 </div>
                 <div className="p-2 flex flex-col font-mono gap-2 text-justify">
-                    <div className="inline-flex justify-center items-center gap-5">
-                        <SiNextdotjs className="w-10 h-10"/>
-                        <SiFastapi className="w-10 h-10"/>
+                    <div className="inline-flex justify-center py-2 items-center gap-5">
+                        {children}
                     </div>
                     {description}
                 </div>
-                <div className="border-t p-2 font-mono text-blue-900">
-                    <a target="_blank" href="https://www.linkedin.com/in/dante-rivarola-dinatale-264a82289/" className="inline-flex items-center justify-start gap-2 border-b border-blue-900 hover:text-sky-600 hover:border-sky-600">See more<FaArrowRightLong className="w-3 h-3"/></a>
+                <div className="border-t p-2 font-mono text-blue-900 py-3">
+                    <a target="_blank" href={href} className="inline-flex items-center justify-start gap-2 border-b border-blue-900 hover:text-sky-600 hover:border-sky-600">See demo!<FaArrowRightLong className="w-3 h-3"/></a>
                 </div>
             </div>
         </div>

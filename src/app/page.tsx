@@ -6,11 +6,11 @@ import { CgArrowRight } from "react-icons/cg";
 import Image from "next/image";
 import { FaCss3Alt, FaGithub, FaHtml5, FaJava, FaLinkedin, FaPython } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { SiOdoo } from "react-icons/si";
-import { RiJavascriptFill } from "react-icons/ri";
+import { SiFastapi, SiNextdotjs, SiOdoo, SiTypescript } from "react-icons/si";
+import { RiJavascriptFill, RiTailwindCssFill } from "react-icons/ri";
 import XpCard from "@/components/XpCard";
 import Project from "@/components/Project";
-import { FaArrowRightLong } from "react-icons/fa6";
+import { FaArrowRightLong, FaLocationDot } from "react-icons/fa6";
 
 
 export default function Home() {
@@ -181,9 +181,22 @@ export default function Home() {
         <div className="w-full">
           <XpCard className="w-full" title="Proyects">
             <div className="border w-full grid xl:grid-cols-4 grid-cols-1 gap-3">
-              <Project title="Nasa Space Apps Challenge" description="Hackathon internacional de la nasa, proyecto de detección sísmica interplanetaria teniendo de ejemplo datos de la luna y marte. Me encargue de la parte de diseño web y Frontend del proyecto con NextJS 14, Typescript y Tailwind CSS."></Project>
-              <Project title="Hola mundo" description="Fullstack project in NextJS14 and NodeJS with Nest API"></Project>
-              <Project title="Hola mundo" description="Fullstack project in NextJS14 and NodeJS with Nest API"></Project>
+              <Project title="Nasa Space Apps Challenge" src="/yvyryryi.png" href="https://yvyryryi.vercel.app/" description="International NASA Hackathon, interplanetary seismic detection project using data from the Moon and Mars as examples. I was in charge of the web design and frontend development of the project using NextJS 14, TypeScript, and Tailwind CSS.">
+                <SiNextdotjs className="w-10 h-10"/>
+                <SiFastapi className="w-10 h-10"/>
+                <RiTailwindCssFill className="w-10 h-10"/>
+              </Project>
+              <Project title="Weather App with location" href="https://new-clima-app.vercel.app/" src="/clima.jpeg" description="Weather forecast app built with NextJS 14, TypeScript, and APIs from OpenWeather, JS Geolocator, and OpenCage Data for retrieving forecasts and location data. Developed from scratch, it features a responsive and minimalist design using Tailwind CSS.">
+                <SiNextdotjs className="w-10 h-10"/>
+                <RiTailwindCssFill className="w-10 h-10"/>
+                <SiTypescript className="w-10 h-10"/>
+                <FaLocationDot className="w-10 h-10"/>
+              </Project>
+              <Project title="Trello App Clone" src="/trello.jpeg" href="https://trello-clone-nextjs-red.vercel.app/dashboard" description="A Trello clone app, focused on layout and drag n' drop functionality. Built with NextJS and TypeScript, styled with Tailwind CSS, and featuring custom components.">
+                <SiNextdotjs className="w-10 h-10"/>
+                <RiTailwindCssFill className="w-10 h-10"/>
+                <SiTypescript className="w-10 h-10"/>
+              </Project>
               <Project title="Hola mundo" description="Fullstack project in NextJS14 and NodeJS with Nest API"></Project>
               <Project title="Hola mundo" description="Fullstack project in NextJS14 and NodeJS with Nest API"></Project>
               <Project title="Hola mundo" description="Fullstack project in NextJS14 and NodeJS with Nest API"></Project>
