@@ -41,7 +41,7 @@ export default function XpCard({className, children, color,title}: CardProps){
                         <button className="absolute top-0 right-0 w-7 z-50 aspect-square rounded-md" onClick={()=> setClose(!close)}></button>
                     </div>
                 </div>
-                <div className={`bg-[#ece9d8] shadow-inner relative text-black p-2 xl:overflow-y-auto transition-all ${close ? "xl:h-0 xl:p-0":"xl:h-[600px]"}`}>
+                <div className={`bg-[#ece9d8] shadow-inner relative text-black p-2 xl:overflow-y-auto normal-scroll transition-all ${close ? "xl:h-0 xl:p-0":"xl:h-[700px]"}`}>
                     {children}
                     <div className="fixed bottom-0 right-0 w-full bg-gradient-to-b from-transparent to-black/40 h-10">
 

@@ -4,13 +4,14 @@ import Card from "@/components/Card";
 import Link from "next/link";
 import { CgArrowRight } from "react-icons/cg";
 import Image from "next/image";
-import { FaCss3Alt, FaGithub, FaHtml5, FaJava, FaLinkedin, FaPython } from "react-icons/fa";
+import { FaAngular, FaCss3Alt, FaGithub, FaHtml5, FaJava, FaLinkedin, FaPython } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { SiFastapi, SiNextdotjs, SiOdoo, SiTypescript } from "react-icons/si";
-import { RiJavascriptFill, RiTailwindCssFill } from "react-icons/ri";
+import { RiTailwindCssFill } from "react-icons/ri";
 import XpCard from "@/components/XpCard";
 import Project from "@/components/Project";
 import { FaArrowRightLong, FaLocationDot } from "react-icons/fa6";
+import { BiLogoCPlusPlus } from "react-icons/bi";
 
 
 export default function Home() {
@@ -171,7 +172,7 @@ export default function Home() {
                   <FaPython className="w-10 h-10"/>
                   <FaHtml5 className="w-10 h-10"/>
                   <FaJava className="w-10 h-10"/>
-                  <RiJavascriptFill className="w-10 h-10"/>
+                  <BiLogoCPlusPlus className="w-10 h-10"/>
                 </div>
               </motion.div>
             </div>
@@ -186,22 +187,39 @@ export default function Home() {
                 <SiFastapi className="w-10 h-10"/>
                 <RiTailwindCssFill className="w-10 h-10"/>
               </Project>
-              <Project title="Weather App with location" href="https://new-clima-app.vercel.app/" src="/clima.jpeg" description="Weather forecast app built with NextJS 14, TypeScript, and APIs from OpenWeather, JS Geolocator, and OpenCage Data for retrieving forecasts and location data. Developed from scratch, it features a responsive and minimalist design using Tailwind CSS.">
+              <Project title="Weather App with location" href="https://new-clima-app.vercel.app/" src="/clima.png" description="Weather forecast app built with NextJS 14, TypeScript, and APIs from OpenWeather, JS Geolocator, and OpenCage Data for retrieving forecasts and location data. Developed from scratch, it features a responsive and minimalist design using Tailwind CSS.">
                 <SiNextdotjs className="w-10 h-10"/>
                 <RiTailwindCssFill className="w-10 h-10"/>
-                <SiTypescript className="w-10 h-10"/>
+                <SiTypescript className="w-9 h-9"/>
                 <FaLocationDot className="w-10 h-10"/>
               </Project>
-              <Project title="Trello App Clone" src="/trello.jpeg" href="https://trello-clone-nextjs-red.vercel.app/dashboard" description="A Trello clone app, focused on layout and drag n' drop functionality. Built with NextJS and TypeScript, styled with Tailwind CSS, and featuring custom components.">
+              <Project title="Trello App Clone" src="/trello.png" href="https://trello-clone-nextjs-red.vercel.app/dashboard" description="A Trello clone app, focused on layout and drag n' drop functionality. Built with NextJS and TypeScript, styled with Tailwind CSS, and featuring custom components.">
                 <SiNextdotjs className="w-10 h-10"/>
                 <RiTailwindCssFill className="w-10 h-10"/>
-                <SiTypescript className="w-10 h-10"/>
+                <SiTypescript className="w-9 h-9"/>
               </Project>
-              <Project title="Hola mundo" description="Fullstack project in NextJS14 and NodeJS with Nest API"></Project>
-              <Project title="Hola mundo" description="Fullstack project in NextJS14 and NodeJS with Nest API"></Project>
-              <Project title="Hola mundo" description="Fullstack project in NextJS14 and NodeJS with Nest API"></Project>
-              <a href={"https://github.com/Yvyryryi/frontend/commits?author=Dantelo04"} target="_blank" className="text-white w-full min-h-32 rounded p-10 bg-gray-950 border-neutral-400 font-mono flex flex-col justify-center items-center gap-5">
-                <FaGithub className="w-20 h-20 text-white"/>
+              <Project title="Angular E-commerce App" src="/store.png" href="https://store-dante.vercel.app/" description="E-commerce project built with Angular 18, Tailwind and TypeScript, featuring filters, categories, a cart system and API calls to 'FakeStore API' from platzi for retrieving fake products.">
+                <FaAngular className="w-10 h-10"/>
+                <RiTailwindCssFill className="w-10 h-10"/>
+                <SiTypescript className="w-9 h-9"/>              
+              </Project>
+              <Project title="Auth Template for NextJS" href="https://lucia-auth-template-next.vercel.app/" src="/lucia.png" description="This is a NextJS 14 template with Lucia-auth made by me for future projects. Lucia is an authentication library that simplifies session management, emphasizing code clarity.">
+                <SiNextdotjs className="w-10 h-10"/>
+                <RiTailwindCssFill className="w-10 h-10"/>
+                <SiTypescript className="w-9 h-9"/>
+              </Project>
+              <Project title="TODO App with Local Storage" src="/todo.png" href="https://mynewtodoapp-46e40.web.app/" description="TODO app for task organization, featuring filters, task selection, and editing capabilities. Built with Angular 17, TypeScript, and CSS. All your todos are stored in your local storage.">
+                <FaAngular className="w-10 h-10"/>
+                <FaCss3Alt className="w-10 h-10"/>
+                <SiTypescript className="w-9 h-9"/> 
+              </Project>
+              <Project title="Anoto Landing Page" href="https://anoto-app.vercel.app/" src="/anoto.png" description="Landing page for the future disruptive company in the tech sector, Anoto Software, high-quality custom software. Built with NextJS 14 and styled with Tailwind CSS and TypeScript.">
+                <SiNextdotjs className="w-10 h-10"/>
+                <RiTailwindCssFill className="w-10 h-10"/>
+                <SiTypescript className="w-9 h-9"/>
+              </Project>
+              <a href={"https://github.com/Dantelo04"} target="_blank" className="text-neutral-400 w-full min-h-32 rounded p-10 bg-white border-neutral-400 font-mono flex flex-col justify-center items-center gap-5">
+                <FaGithub className="w-20 h-20 text-neutral-400"/>
                 <div className="text-xl inline-flex gap-2 justify-center items-center">See more<FaArrowRightLong className="w-5 h-5"/></div>
               </a>
             </div>

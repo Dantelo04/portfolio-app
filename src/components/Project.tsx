@@ -32,7 +32,7 @@ export default function Project({title,description,children,href,src}:ProjectPro
                             alt={"project_image"}
                             width={718}
                             height={241}
-                            className="h-auto bg-cover w-full rounded-md"
+                            className="h-auto bg-cover w-full rounded-md border"
                         />
                     </a>
                 </div>
