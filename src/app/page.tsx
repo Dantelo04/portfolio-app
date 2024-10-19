@@ -10,6 +10,7 @@ import { SiOdoo } from "react-icons/si";
 import { RiJavascriptFill } from "react-icons/ri";
 import XpCard from "@/components/XpCard";
 import Project from "@/components/Project";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 
 export default function Home() {
@@ -180,12 +181,16 @@ export default function Home() {
         <div className="w-full">
           <XpCard className="w-full" title="Proyects">
             <div className="border w-full grid xl:grid-cols-4 grid-cols-1 gap-3">
+              <Project title="Nasa Space Apps Challenge" description="Hackathon internacional de la nasa, proyecto de detección sísmica interplanetaria teniendo de ejemplo datos de la luna y marte. Me encargue de la parte de diseño web y Frontend del proyecto con NextJS 14, Typescript y Tailwind CSS."></Project>
               <Project title="Hola mundo" description="Fullstack project in NextJS14 and NodeJS with Nest API"></Project>
               <Project title="Hola mundo" description="Fullstack project in NextJS14 and NodeJS with Nest API"></Project>
               <Project title="Hola mundo" description="Fullstack project in NextJS14 and NodeJS with Nest API"></Project>
               <Project title="Hola mundo" description="Fullstack project in NextJS14 and NodeJS with Nest API"></Project>
               <Project title="Hola mundo" description="Fullstack project in NextJS14 and NodeJS with Nest API"></Project>
-              <Project title="Hola mundo" description="Fullstack project in NextJS14 and NodeJS with Nest API"></Project>
+              <a href={"https://github.com/Yvyryryi/frontend/commits?author=Dantelo04"} target="_blank" className="text-white w-full min-h-32 rounded p-10 bg-gray-950 border-neutral-400 font-mono flex flex-col justify-center items-center gap-5">
+                <FaGithub className="w-20 h-20 text-white"/>
+                <div className="text-xl inline-flex gap-2 justify-center items-center">See more<FaArrowRightLong className="w-5 h-5"/></div>
+              </a>
             </div>
           </XpCard>
         </div>

@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { FaArrowRightLong } from "react-icons/fa6"
+import { SiFastapi, SiNextdotjs } from "react-icons/si"
 
 
 interface ProjectProps {
@@ -28,10 +29,17 @@ export default function Project({title,description}:ProjectProps){
                         alt={"controls"}
                         width={718}
                         height={241}
-                        className="h-auto bg-cover w-full rounded"
+                        className="h-auto bg-cover w-full rounded-md"
                     />
+                    <div className="absolute flex justify-center items-center top-0 right-0 h-full w-full">
+
+                    </div>
                 </div>
-                <div className="p-2 font-mono">
+                <div className="p-2 flex flex-col font-mono gap-2 text-justify">
+                    <div className="inline-flex justify-center items-center gap-5">
+                        <SiNextdotjs className="w-10 h-10"/>
+                        <SiFastapi className="w-10 h-10"/>
+                    </div>
                     {description}
                 </div>
                 <div className="border-t p-2 font-mono text-blue-900">
