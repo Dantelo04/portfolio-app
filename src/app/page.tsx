@@ -8,6 +8,8 @@ import { FaCss3Alt, FaGithub, FaHtml5, FaJava, FaLinkedin, FaPython } from "reac
 import { motion } from "framer-motion";
 import { SiOdoo } from "react-icons/si";
 import { RiJavascriptFill } from "react-icons/ri";
+import XpCard from "@/components/XpCard";
+import Project from "@/components/Project";
 
 
 export default function Home() {
@@ -176,9 +178,16 @@ export default function Home() {
         </div>
 
         <div className="w-full">
-          <Card className="w-full min-h-72">
-            <div></div>
-          </Card>
+          <XpCard className="w-full" title="Proyects">
+            <div className="border w-full grid xl:grid-cols-4 grid-cols-1 gap-3">
+              <Project title="Hola mundo" description="Fullstack project in NextJS14 and NodeJS with Nest API"></Project>
+              <Project title="Hola mundo" description="Fullstack project in NextJS14 and NodeJS with Nest API"></Project>
+              <Project title="Hola mundo" description="Fullstack project in NextJS14 and NodeJS with Nest API"></Project>
+              <Project title="Hola mundo" description="Fullstack project in NextJS14 and NodeJS with Nest API"></Project>
+              <Project title="Hola mundo" description="Fullstack project in NextJS14 and NodeJS with Nest API"></Project>
+              <Project title="Hola mundo" description="Fullstack project in NextJS14 and NodeJS with Nest API"></Project>
+            </div>
+          </XpCard>
         </div>
 
         <div className="flex xl:flex-row flex-col space-y-4 xl:space-y-0 w-full xl:space-x-4 xl:h-72">
