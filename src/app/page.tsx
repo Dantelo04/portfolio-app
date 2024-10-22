@@ -4,7 +4,7 @@ import Card from "@/components/Card";
 import Link from "next/link";
 import { CgArrowRight } from "react-icons/cg";
 import Image from "next/image";
-import { FaAngular, FaCss3Alt, FaGithub, FaHtml5, FaJava, FaLinkedin, FaPython } from "react-icons/fa";
+import { FaAngular, FaCss3Alt, FaGithub, FaGitSquare, FaHtml5, FaJava, FaLinkedin, FaPython, FaReact } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { SiFastapi, SiNextdotjs, SiOdoo, SiTypescript } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -37,8 +37,16 @@ export default function Home() {
                   <div className="text-neutral-100 text-4xl font-bold">
                     Dante Rivarola Dinatale.
                   </div>
-                  <div className="text-neutral-400">
-                    I am a web dev based in Asuncion, Paraguay with <strong>+2</strong> years experience.
+                  <div className="flex flex-col gap-4 text-neutral-400">
+                    <div>I am a web dev based in Asuncion, Paraguay with <strong>+2</strong> years experience.</div>
+                    <div className="inline-flex xl:justify-start justify-between items-center gap-2">
+                      <a href="https://react.dev/" className="z-50" target="_blank"><FaReact className="w-10 h-10"/></a>
+                      <a href="https://angular.dev/overview" className="z-50" target="_blank"><FaAngular className="w-10 h-10"/></a>
+                      <a href="https://tailwindcss.com/" className="z-50" target="_blank"><RiTailwindCssFill className="w-10 h-10"/></a>
+                      <a href="https://www.typescriptlang.org/docs/" className="z-50" target="_blank"><SiTypescript className="w-9 h-9"/></a>
+                      <a href="https://www.python.org/doc/" className="z-50" target="_blank"><FaPython className="w-10 h-10"/></a>
+                      <a href="https://git-scm.com/" className="z-50" target="_blank"><FaGitSquare className="w-10 h-10"/></a>
+                    </div>
                   </div>
                 </div>
               </div>
