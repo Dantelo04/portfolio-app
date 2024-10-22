@@ -35,10 +35,14 @@ const Page = () => {
 
     async function submitHandler(e:FormEvent<HTMLFormElement>){
         e.preventDefault()
-        setMessage("loading")
-        const res = await sendContacForm(formData)
-        setMessage(res)
-        console.log(message)
+        if(formData.from == '' || formData.subject == '' || formData.text == ''){
+            setMessage("There are empty fields")
+            // console.log(formData)
+        } else {
+            setMessage("loading")
+            const res = await sendContacForm(formData)
+            setMessage(res)
+        }
     }
 
     return (
@@ -50,7 +54,7 @@ const Page = () => {
                     <input className='bg-black rounded-xl border-neutral-700 border p-2 placeholder:text-neutral-500 focus:outline-dashed outline-white' type="text" name='subject' placeholder='Write a subject...' value={formData.subject} onChange={changeHandler}/>
                     <textarea className='bg-black rounded-xl border-neutral-700 border p-2 placeholder:text-neutral-500 focus:outline-dashed outline-white min-h-40' name='text' placeholder='Tell me about you...' value={formData.text} onChange={areaChangeHandler}/>
                     <button className="rounded-xl bg-neutral-700 text-neutral-100 inline-flex justify-center items-center py-2 px-4 hover:bg-neutral-200 hover:text-neutral-900 font-bold duration-200 ease-in" type='submit'>{message == 'loading' ? <BiLoaderAlt className='w-7 h-7 animate-spin'/>:"Send"}</button>
-                    <div className={`p-2 rounded-xl border-green-500 bg-green-500/15 text-green-500 border justify-between items-center ${message != '' && message != 'loading' ? "inline-flex":"hidden"}`}>Sent to danterivadi.work@gmail.com</div>
+                    <div className={`p-2 rounded-xl border-green-500 bg-green-500/15 text-green-500 border justify-between items-center ${message != '' && message != 'loading' ? "inline-flex":"hidden"} ${message == 'There are empty fields' ? 'text-red-500 bg-red-500/15 border-red-500':''}`}>{message}</div>
                 </form>
             </div>
         </div>
