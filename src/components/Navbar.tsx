@@ -13,9 +13,9 @@ export default function Navbar(){
 
     return(
         <div className={isOpen ? "flex xl:flex-row flex-col xl:space-y-0 space-y-5 fixed justify-between items-center h-auto xl:p-5 xl:py-5 xl:px-4 top-0 xl:w-full w-full z-50 duration-100 bg-black/0 transition-all" : "flex xl:flex-row flex-col xl:space-y-0 space-y-7 fixed items-center transition-all h-screen xl:p-5 py-5 px-4 top-0 xl:w-9/12 w-full z-40 justify-start backdrop-blur-xl bg-black/50 duration-100"}>
-            <div className={`flex flex-row text-xl items-center font-mono text-white xl:w-fit w-full duration-100 py-4 xl:py-1 transition-all px-4 ${isOpen ? "backdrop-blur-lg border-neutral-700/50 rounded-0":"backdrop-blur-sm border-neutral-700/0 rounded-xl"} xl:backdrop-blur-0 justify-between`}>
-                <div>
-                    dante<span className="text-neutral-500">, fullstack</span>
+            <div className={`flex flex-row text-xl items-center font-mono text-white xl:w-fit w-full relative duration-100 py-4 xl:py-1 transition-all px-4 ${isOpen ? "backdrop-blur-lg border-neutral-700/50 rounded-0":"backdrop-blur-sm border-neutral-700/0 rounded-xl"} xl:backdrop-blur-0 justify-between`}>
+                <div className="">
+                    dante<span className="text-neutral-400">, fullstack</span>
                 </div>
                 <button onClick={()=> setOpen(!isOpen)} className="xl:hidden">
                     {isOpen ? 
@@ -29,7 +29,7 @@ export default function Navbar(){
                     
                 </button>
             </div>
-            <ul className={isOpen ? "xl:flex xl:flex-row flex-col gap-14  text-neutral-400 backdrop-blur-lg hidden border border-neutral-700/50 rounded-xl text-center px-20 py-2" : "flex xl:flex-row flex-col text-center space-y-5 text-xl xl:space-x-14 text-neutral-300"}>
+            <ul className={isOpen ? "xl:flex xl:flex-row flex-col gap-14 justify-center text-neutral-400 backdrop-blur-lg hidden border border-neutral-700/50 rounded-xl text-center px-20 py-2" : "flex xl:flex-row flex-col text-center space-y-5 text-xl xl:space-x-14 text-neutral-300"}>
                 <li className="hover:text-white duration-100 xl:hidden xl:hover:bg-neutral-600"><Link href={"/"} onClick={()=> setOpen(!isOpen)}>Home</Link></li>
                 <li className="hover:text-white duration-100 hidden xl:flex xl:hover:bg-neutral-700 px-2 rounded-xl"><Link href={"/"} className="inline-flex justify-center items-center gap-2">Home <TiHome /></Link></li>
                 <li className="hover:text-white duration-100 xl:hover:bg-neutral-700 px-2 rounded-xl"><a className="inline-flex justify-center items-center gap-2" download={"CV_DANTE_RIVAROLA_DINATALE_ENGLISH"} href={"/CV_DANTE_RIVAROLA_DINATALE_ENGLISH.pdf"}>CV <HiDownload /></a></li>
