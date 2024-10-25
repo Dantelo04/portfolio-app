@@ -12,8 +12,8 @@ export default function Navbar(){
     const [isOpen, setOpen] = useState(true)
 
     return(
-        <div className={isOpen ? "flex xl:flex-row flex-col xl:space-y-0 space-y-5 fixed justify-between items-center h-auto xl:p-5 xl:py-5 xl:px-4 top-0 xl:w-full w-full z-50 duration-100 bg-black/0 transition-all" : "flex xl:flex-row flex-col xl:space-y-0 space-y-7 fixed items-center transition-all h-screen xl:p-5 py-5 px-4 top-0 xl:w-9/12 w-full z-40 justify-start backdrop-blur-xl bg-black/50 duration-100"}>
-            <div className={`flex flex-row text-xl items-center font-mono text-white xl:w-fit w-full relative duration-100 py-4 xl:py-1 transition-all px-4 ${isOpen ? "backdrop-blur-lg border-neutral-700/50 rounded-0":"backdrop-blur-sm border-neutral-700/0 rounded-xl"} xl:backdrop-blur-0 justify-between`}>
+        <div className={isOpen ? "flex xl:flex-row flex-col xl:space-y-0 space-y-5 fixed justify-between items-center h-auto xl:p-5 xl:py-5 xl:px-4 top-0 xl:w-full w-full z-50 duration-100 bg-black/0 transition-all xl:backdrop-blur-none backdrop-blur-lg" : "flex xl:flex-row flex-col xl:space-y-0 space-y-7 fixed items-center transition-all h-screen xl:p-5 py-5 px-4 top-0 xl:w-9/12 w-full z-40 justify-start backdrop-blur-xl bg-black/50 duration-100"}>
+            <div className={`flex flex-row text-xl items-center font-mono text-white xl:w-fit w-full duration-100 py-4 xl:py-1 transition-all px-4 xl:backdrop-blur-0 justify-between`}>
                 <div className="">
                     dante<span className="text-neutral-400">, fullstack</span>
                 </div>
