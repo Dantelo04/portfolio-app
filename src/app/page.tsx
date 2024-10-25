@@ -17,7 +17,7 @@ import { BiLogoCPlusPlus } from "react-icons/bi";
 export default function Home() {
   return (
     <div className="flex flex-col xl:space-y-4 items-center w-auto min-h-screen max-w-screen">
-      <div className="flex flex-col xl:w-8/12 w-11/12 items-center justify-center space-y-4 xl:items-start h-fit pt-20">
+      <div className="flex flex-col min-[1700px]:w-9/12 w-11/12 items-center justify-center space-y-4 xl:items-start h-fit pt-20">
         <div className="flex xl:flex-row flex-col xl:space-x-4 space-y-4 xl:space-y-0 xl:h-72 xl:items-start items-center w-full">
           <div className="flex xl:w-full w-full grow xl:h-full">
             <Card className="w-full">
