@@ -30,7 +30,7 @@ export default function Home() {
                   className="rounded-xl object-contain h-full w-full xl:w-auto"
                   quality={80}
                 ></Image>
-                <div className="flex flex-col xl:h-64 text-start w-full justify-center space-y-4 rounded max-w-full">
+                <div className="flex flex-col xl:h-64 text-start w-full justify-center space-y-2 rounded max-w-full">
                   <div className="text-neutral-400 uppercase">
                     Full-stack developer
                   </div>
@@ -38,7 +38,7 @@ export default function Home() {
                     Dante Rivarola Dinatale.
                   </div>
                   <div className="flex flex-col gap-4 text-neutral-400">
-                    <div>I am a web dev based in Asuncion, Paraguay with <strong>+2</strong> years experience.</div>
+                    <div className="">I am a full stack dev based in Paraguay with <strong>+1</strong> years of experience.</div>
                     <div className="inline-flex xl:justify-start justify-between items-center gap-2">
                       <a href="https://react.dev/" className="z-50" target="_blank"><FaReact className="w-10 h-10"/></a>
                       <a href="https://angular.dev/overview" className="z-50" target="_blank"><FaAngular className="w-10 h-10"/></a>
@@ -239,7 +239,7 @@ export default function Home() {
             <div className="flex xl:flex-row flex-col space-y-4 xl:space-y-0 xl:space-x-4 p-4 w-full">
               <div className="flex flex-col p-10 space-y-4 items-center justify-center grow rounded-2xl">
                 <div className="xl:text-8xl text-8xl font-extrabold">
-                  +2
+                  +1
                 </div>
                 <div className="font-bold text-sm xl:text-base uppercase text-neutral-200 text-center">
                   years experience in software development

@@ -88,14 +88,14 @@ display: inline-block;
     
     
 .normal-scroll::-webkit-scrollbar-track {
-        background: #acacac;
-    }
+    background: #acacac;
+}
     
 .normal-scroll::-webkit-scrollbar-thumb {
-        background: #757575;
-        border-radius: 2px;
-    }
+    background: #757575;
+    border-radius: 2px;
+}
     
 .normal-scroll::-webkit-scrollbar-thumb:hover {
-        background: #464646;
-    }
+    background: #464646;
+}

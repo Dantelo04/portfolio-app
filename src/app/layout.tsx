@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Dante Rivarola",
-  description: "Get in touch with Dante Rivarola",
+  description: "Work with me!",
 };
 
 export default function RootLayout({
@@ -19,6 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-neutral-950 text-neutral-200 max-w-screen antialiased">
+      <head>
+        <meta property="og:image" content="/portfolio.png" />
+      </head>
       <body
         className={inter.className}
       >
