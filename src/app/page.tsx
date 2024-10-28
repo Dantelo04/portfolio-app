@@ -252,9 +252,13 @@ export default function Home() {
               <div className="flex flex-col space-y-2 font-bold w-8/12 h-full justify-center text-4xl xl:text-5xl">
                 {"Let's"}<span className="text-sky-800 inline-flex justify-start items-center gap-2">work together.</span>
               </div>
-              <div className="text-5xl animate-bounce">💼</div>
+              <div className="flex flex-col justify-center items-center gap-2 text-5xl">
+                <div className="animate-bounce">
+                  💼
+                </div>
+                <CgArrowRight className="w-6 h-6"></CgArrowRight>
+              </div>
             </div>
-            <CgArrowRight className="w-5 h-5 absolute xl:bottom-10 right-10 bottom-6"></CgArrowRight>
           </Card>
         </div>
       </div>

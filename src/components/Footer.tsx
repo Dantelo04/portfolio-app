@@ -18,7 +18,7 @@ export default function Footer(){
             </ul>
             <h1 className="border-b w-10/12 text-center border-neutral-600 xl:hidden"></h1>
             <ul className="flex xl:flex-row flex-col gap-5 justify-center items-center xl:hidden text-neutral-600">
-                <li className="hover:text-white duration-100 inline-flex justify-center items-center gap-2">danterivadi.work@gmail.com <CgMail className="w-5 h-5"/></li>
+                <li className="text-white duration-100 inline-flex justify-center items-center gap-2">danterivadi.work@gmail.com <CgMail className="w-5 h-5"/></li>
                 <li className="hover:text-white duration-100"><a download={"CV_DANTE_RIVAROLA_DINATALE_ENGLISH"} href={"/CV_DANTE_RIVAROLA_DINATALE_ENGLISH.pdf"} className="inline-flex justify-center items-center gap-2">CV <HiDownload /></a></li>
                 <li className="hover:text-white duration-100"><Link href={"https://github.com/Dantelo04"} className="inline-flex justify-center items-center gap-2">Proyects <FaGithub /></Link></li>
                 <li className="hover:text-white duration-100"><Link href={"/contact"} className="inline-flex justify-center items-center gap-2">Contact <TbBriefcase2Filled /></Link></li>
