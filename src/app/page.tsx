@@ -27,12 +27,12 @@ export default function Home() {
                   alt="definetec_logo"
                   width={600}
                   height={600}
-                  className="rounded-xl object-contain h-full w-full xl:w-auto"
+                  className="rounded-xl object-contain h-full w-full xl:w-auto brightness-90"
                   quality={80}
                 ></Image>
                 <div className="flex flex-col xl:h-64 text-start w-full justify-center space-y-2 rounded max-w-full">
                   <div className="text-neutral-400 uppercase">
-                    Full-stack developer
+                    Full stack developer
                   </div>
                   <div className="text-neutral-100 text-4xl font-bold">
                     Dante Rivarola Dinatale.
@@ -100,22 +100,22 @@ export default function Home() {
         </div>
 
         <div className="flex xl:flex-row flex-col gap-4 w-full grow xl:h-full">
-          <Card className="xl:grow xl:w-fit w-full bg-gradient-to-tl relative border-gray-950" color="from-purple-950 relative-card to-gray-800" href="https://definetec.com.py/" newTab={true}>
+          <Card className="xl:grow xl:w-fit w-full bg-gradient-to-tl relative border-gray-950" color="from-blue-950 relative-card to-blue-500" href="https://onehq.com/" newTab={true}>
             <div className="flex xl:flex-row flex-col space-y-5 xl:space-x-6 xl:space-y-0 p-5 items-center max-w-full xl:justify-center xl:h-64 justify-center w-full">
               <div className="xl:flex flex-col hidden w-full text-start justify-center px-1 xl:space-y-3 space-y-2 rounded max-w-full">
                 <div className="text-neutral-100/50 uppercase">
                   Currently working at
                 </div>
                 <div className="text-neutral-100 text-4xl xl:text-6xl font-bold">
-                  Definetec
+                  OneHQ
                 </div>
                 <div className="text-neutral-100/50">
-                  as a full-time fullstack developer
+                  as a full-time <strong> full stack developer</strong>
                 </div>
               </div>
               <Image
-                src={"/definetec.png"}
-                alt="definetec_logo"
+                src={"/onehq.jpeg"}
+                alt="onehq_logo"
                 width={600}
                 height={600}
                 className="rounded-xl object-contain h-full w-full xl:w-auto"
@@ -126,10 +126,10 @@ export default function Home() {
                   Currently working at
                 </div>
                 <div className="text-neutral-100 text-4xl xl:text-6xl font-bold">
-                  Definetec
+                  OneHQ
                 </div>
                 <div className="text-neutral-100/50">
-                  as a full-time fullstack developer
+                  as a full-time <strong> full stack developer</strong>
                 </div>
               </div>
               <motion.div className="flex xl:hidden flex-col items-center w-full xl:absolute bottom-4 right-9">
@@ -153,7 +153,7 @@ export default function Home() {
                   FP-UNA
                 </div>
                 <div className="text-neutral-100/50">
-                  to become a software engineer
+                  to become a <strong>software engineer</strong> 
                 </div>
               </div>
               <Image
@@ -172,7 +172,7 @@ export default function Home() {
                   FP-UNA
                 </div>
                 <div className="text-neutral-100/50">
-                  to become a software engineer
+                  to become a <strong>software engineer</strong> 
                 </div>
               </div>
               <motion.div className="flex xl:hidden flex-col items-center w-full xl:absolute bottom-4 right-9">
