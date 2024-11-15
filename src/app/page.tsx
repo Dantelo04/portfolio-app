@@ -5,8 +5,7 @@ import Link from "next/link";
 import { CgArrowRight } from "react-icons/cg";
 import Image from "next/image";
 import { FaAngular, FaCss3Alt, FaGithub, FaGitSquare, FaHtml5, FaJava, FaLinkedin, FaPython, FaReact } from "react-icons/fa";
-import { motion } from "framer-motion";
-import { SiFastapi, SiNextdotjs, SiOdoo, SiTypescript } from "react-icons/si";
+import { SiFastapi, SiNextdotjs, SiRubyonrails, SiTypescript } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import XpCard from "@/components/XpCard";
 import Project from "@/components/Project";
@@ -40,12 +39,12 @@ export default function Home() {
                   <div className="flex flex-col gap-4 text-neutral-400">
                     <div className="">I am a full stack dev based in Paraguay with <strong>+1</strong> years of experience.</div>
                     <div className="inline-flex xl:justify-start justify-between items-center gap-2">
-                      <a href="https://react.dev/" className="z-50" target="_blank"><FaReact className="w-10 h-10"/></a>
-                      <a href="https://angular.dev/overview" className="z-50" target="_blank"><FaAngular className="w-10 h-10"/></a>
-                      <a href="https://tailwindcss.com/" className="z-50" target="_blank"><RiTailwindCssFill className="w-10 h-10"/></a>
-                      <a href="https://www.typescriptlang.org/docs/" className="z-50" target="_blank"><SiTypescript className="w-9 h-9"/></a>
-                      <a href="https://www.python.org/doc/" className="z-50" target="_blank"><FaPython className="w-10 h-10"/></a>
-                      <a href="https://git-scm.com/" className="z-50" target="_blank"><FaGitSquare className="w-10 h-10"/></a>
+                      <a href="https://react.dev/" className="z-50" target="_blank" title="React.Js"><FaReact className="w-10 h-10"/></a>
+                      <a href="https://angular.dev/overview" className="z-50" target="_blank" title="Angular"><FaAngular className="w-10 h-10"/></a>
+                      <a href="https://tailwindcss.com/" className="z-50" target="_blank" title="Tailwind CSS"><RiTailwindCssFill className="w-10 h-10"/></a>
+                      <a href="https://www.typescriptlang.org/docs/" className="z-50" target="_blank" title="TypeScript"><SiTypescript className="w-9 h-9"/></a>
+                      <a href="https://www.python.org/doc/" className="z-50" target="_blank" title="Python"><FaPython className="w-10 h-10"/></a>
+                      <a href="https://git-scm.com/" className="z-50" target="_blank" title="Git"><FaGitSquare className="w-10 h-10"/></a>
                     </div>
                   </div>
                 </div>
@@ -102,7 +101,7 @@ export default function Home() {
         <div className="flex xl:flex-row flex-col gap-4 w-full grow xl:h-full">
           <Card className="xl:grow xl:w-fit w-full bg-gradient-to-tl relative border-gray-950" color="from-blue-950 relative-card to-blue-500" href="https://onehq.com/" newTab={true}>
             <div className="flex xl:flex-row flex-col space-y-5 xl:space-x-6 xl:space-y-0 p-5 items-center max-w-full xl:justify-center xl:h-64 justify-center w-full">
-              <div className="xl:flex flex-col hidden w-full text-start justify-center px-1 xl:space-y-3 space-y-2 rounded max-w-full">
+              <div className="xl:flex flex-col hidden w-full text-start justify-center px-1 xl:space-y-2 space-y-2 rounded max-w-full">
                 <div className="text-neutral-100/50 uppercase">
                   Currently working at
                 </div>
@@ -111,6 +110,12 @@ export default function Home() {
                 </div>
                 <div className="text-neutral-100/50">
                   as a full-time <strong> full stack developer</strong>
+                </div>
+                <div className="inline-flex gap-2 py-2 items-center justify-start w-full">
+                  <FaReact className="w-10 h-10 z-50 cursor-pointer" title="React.Js"/>
+                  <SiTypescript className="w-10 h-10 z-50 cursor-pointer" title="TypeScript"/>
+                  <FaCss3Alt className="w-10 h-10 z-50 cursor-pointer" title="CSS"/>
+                  <SiRubyonrails className="w-10 h-10 z-50 cursor-pointer" title="Ruby On Rails"/>
                 </div>
               </div>
               <Image
@@ -132,14 +137,14 @@ export default function Home() {
                   as a full-time <strong> full stack developer</strong>
                 </div>
               </div>
-              <motion.div className="flex xl:hidden flex-col items-center w-full xl:absolute bottom-4 right-9">
+              <div className="flex xl:hidden flex-col items-center w-full xl:absolute bottom-4 right-9">
                 <div className="inline-flex gap-5 items-center justify-center w-full">
-                  <SiOdoo className="w-20 h-20"/>
-                  <FaPython className="w-10 h-10"/>
-                  <FaHtml5 className="w-10 h-10"/>
+                  <FaReact className="w-10 h-10"/>
+                  <SiTypescript className="w-10 h-10"/>
                   <FaCss3Alt className="w-10 h-10"/>
+                  <SiRubyonrails className="w-10 h-10"/>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </Card>
 
@@ -154,6 +159,12 @@ export default function Home() {
                 </div>
                 <div className="text-neutral-100/50">
                   to become a <strong>software engineer</strong> 
+                </div>
+                <div className="inline-flex gap-2 py-2 items-center justify-start">
+                  <FaPython className="w-10 h-10 z-50 cursor-pointer" title="React.Js"/>
+                  <FaHtml5 className="w-10 h-10 z-50 cursor-pointer" title="HTML"/>
+                  <FaJava className="w-10 h-10 z-50 cursor-pointer" title="Java"/>
+                  <BiLogoCPlusPlus className="w-10 h-10 z-50 cursor-pointer" title="C++"/>
                 </div>
               </div>
               <Image
@@ -175,14 +186,14 @@ export default function Home() {
                   to become a <strong>software engineer</strong> 
                 </div>
               </div>
-              <motion.div className="flex xl:hidden flex-col items-center w-full xl:absolute bottom-4 right-9">
+              <div className="flex xl:hidden flex-col items-center w-full xl:absolute bottom-4 right-9">
                 <div className="inline-flex gap-5 items-center justify-center">
                   <FaPython className="w-10 h-10"/>
                   <FaHtml5 className="w-10 h-10"/>
                   <FaJava className="w-10 h-10"/>
                   <BiLogoCPlusPlus className="w-10 h-10"/>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </Card>
         </div>
