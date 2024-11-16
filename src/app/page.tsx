@@ -26,7 +26,7 @@ export default function Home() {
                   alt="definetec_logo"
                   width={600}
                   height={600}
-                  className="rounded-xl object-contain h-full w-full xl:w-auto brightness-90"
+                  className="rounded-xl flex object-contain h-full w-full xl:w-auto brightness-90"
                   quality={80}
                 ></Image>
                 <div className="flex flex-col xl:h-64 text-start w-full justify-center space-y-2 rounded max-w-full">
@@ -99,7 +99,7 @@ export default function Home() {
         </div>
 
         <div className="flex xl:flex-row flex-col gap-4 w-full grow xl:h-full">
-          <Card className="xl:grow xl:w-fit w-full bg-gradient-to-tl relative border-gray-950" color="from-blue-950 relative-card to-blue-500" href="https://onehq.com/" newTab={true}>
+          <Card className="xl:grow xl:w-fit w-full bg-gradient-to-tl relative border-gray-950" color="from-blue-800 relative-card to-blue-500" href="https://onehq.com/" newTab={true}>
             <div className="flex xl:flex-row flex-col space-y-5 xl:space-x-6 xl:space-y-0 p-5 items-center max-w-full xl:justify-center xl:h-64 justify-center w-full">
               <div className="xl:flex flex-col hidden w-full text-start justify-center px-1 xl:space-y-2 space-y-2 rounded max-w-full">
                 <div className="text-neutral-100/50 uppercase">
@@ -111,7 +111,7 @@ export default function Home() {
                 <div className="text-neutral-100/50">
                   as a full-time <strong> full stack developer</strong>
                 </div>
-                <div className="inline-flex gap-2 py-2 items-center justify-start w-full">
+                <div className="inline-flex gap-2 py-2 items-center justify-start text-white w-full">
                   <FaReact className="w-10 h-10 z-50 cursor-pointer" title="React.Js"/>
                   <SiTypescript className="w-10 h-10 z-50 cursor-pointer" title="TypeScript"/>
                   <FaCss3Alt className="w-10 h-10 z-50 cursor-pointer" title="CSS"/>
@@ -126,11 +126,11 @@ export default function Home() {
                 className="rounded-xl object-contain h-full w-full xl:w-auto"
                 quality={80}
               ></Image>
-              <div className="flex flex-col xl:hidden xl:h-64 w-full text-start justify-center px-1 xl:space-y-3 space-y-2 rounded max-w-full">
+              <div className="flex flex-col xl:hidden xl:h-64 w-full text-center justify-center px-1 xl:space-y-3 space-y-1 rounded max-w-full">
                 <div className="text-neutral-100/50 uppercase">
                   Currently working at
                 </div>
-                <div className="text-neutral-100 text-4xl xl:text-6xl font-bold">
+                <div className="text-neutral-100 text-5xl xl:text-6xl font-bold">
                   OneHQ
                 </div>
                 <div className="text-neutral-100/50">
@@ -138,7 +138,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex xl:hidden flex-col items-center w-full xl:absolute bottom-4 right-9">
-                <div className="inline-flex gap-5 items-center justify-center w-full">
+                <div className="inline-flex gap-5 items-center justify-center text-white w-full">
                   <FaReact className="w-10 h-10"/>
                   <SiTypescript className="w-10 h-10"/>
                   <FaCss3Alt className="w-10 h-10"/>
@@ -148,9 +148,9 @@ export default function Home() {
             </div>
           </Card>
 
-          <Card color="from-indigo-900 to-gray-800" className="xl:grow xl:w-fit w-full bg-gradient-to-tl relative-card border-gray-800 border-0" href="https://www.pol.una.py/" newTab={true}>
+          <Card color="from-blue-900 to-emerald-950" className="xl:grow xl:w-fit w-full bg-gradient-to-tl relative-card border-gray-800 border-0" href="https://www.pol.una.py/" newTab={true}>
             <div className="flex xl:flex-row flex-col space-y-5 xl:space-x-6 xl:space-y-0 p-5 items-center max-w-full xl:justify-center xl:h-64 justify-center w-full">
-              <div className="xl:flex flex-col hidden w-full text-start justify-center px-1 xl:space-y-3 space-y-2 rounded max-w-full">
+              <div className="xl:flex flex-col hidden w-full text-start justify-center px-1 xl:space-y-2 space-y-2 rounded max-w-full">
               <div className="text-neutral-100/50 uppercase">
                   Currently studying at
                 </div>
@@ -160,7 +160,7 @@ export default function Home() {
                 <div className="text-neutral-100/50">
                   to become a <strong>software engineer</strong> 
                 </div>
-                <div className="inline-flex gap-2 py-2 items-center justify-start">
+                <div className="inline-flex gap-2 py-2 items-center justify-start text-white">
                   <FaPython className="w-10 h-10 z-50 cursor-pointer" title="React.Js"/>
                   <FaHtml5 className="w-10 h-10 z-50 cursor-pointer" title="HTML"/>
                   <FaJava className="w-10 h-10 z-50 cursor-pointer" title="Java"/>
@@ -175,11 +175,11 @@ export default function Home() {
                 className="rounded-xl object-contain h-full w-full xl:w-auto"
                 quality={80}
               ></Image>
-              <div className="flex flex-col xl:hidden xl:h-64 w-full text-start justify-center px-1 xl:space-y-3 space-y-2 rounded max-w-full">
+              <div className="flex flex-col xl:hidden xl:h-64 w-full xl:text-start text-center justify-center px-1 xl:space-y-3 space-y-1 rounded max-w-full">
               <div className="text-neutral-100/50 uppercase">
                   Currently studying at
                 </div>
-                <div className="text-neutral-100 text-4xl xl:text-6xl font-bold">
+                <div className="text-neutral-100 text-5xl xl:text-6xl font-bold">
                   FP-UNA
                 </div>
                 <div className="text-neutral-100/50">
@@ -187,7 +187,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex xl:hidden flex-col items-center w-full xl:absolute bottom-4 right-9">
-                <div className="inline-flex gap-5 items-center justify-center">
+                <div className="inline-flex gap-5 items-center justify-center text-white">
                   <FaPython className="w-10 h-10"/>
                   <FaHtml5 className="w-10 h-10"/>
                   <FaJava className="w-10 h-10"/>
