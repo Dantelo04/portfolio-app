@@ -48,7 +48,7 @@ const Page = () => {
     return (
         <div className='xl:mt-28 mt-20 flex justify-center'>
             <div className='xl:w-8/12 w-full flex flex-col gap-2 justify-center items-center'>
-                <h1 className='xl:text-8xl text-6xl font-extrabold tracking-tighter text-center'>CONTACT ME </h1>
+                <h1 className='xl:text-8xl text-4xl font-extrabold tracking-tighter text-center'>CONTACT ME </h1>
                 <form onSubmit={submitHandler} className='flex flex-col gap-3 xl:p-10 p-4 pb-32 text-white xl:w-7/12 w-full'>
                     <input className='bg-black rounded-xl border-neutral-700 border p-2 placeholder:text-neutral-500 focus:outline-dashed outline-white' type="text" name='from' placeholder='Enter your email...' value={formData.from} onChange={changeHandler}/>
                     <input className='bg-black rounded-xl border-neutral-700 border p-2 placeholder:text-neutral-500 focus:outline-dashed outline-white' type="text" name='subject' placeholder='Write a subject...' value={formData.subject} onChange={changeHandler}/>
