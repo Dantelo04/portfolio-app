@@ -20,7 +20,7 @@ export default function Home() {
         <div className="flex xl:flex-row flex-col xl:space-x-4 space-y-4 xl:space-y-0 xl:h-72 xl:items-start items-center w-full">
           <div className="flex xl:w-full w-full grow xl:h-full">
             <Card className="w-full">
-              <div className="flex xl:flex-row flex-col space-y-5 xl:space-x-6 p-5 items-center max-w-full xl:justify-start justify-center w-full">
+              <div className="flex min-[800px]:flex-row flex-col space-y-5 min-[800px]:space-x-6 p-5 items-center max-w-full min-[800px]:justify-start justify-center w-full">
                 <Image
                   src={"/dante.png"}
                   alt="definetec_logo"
@@ -29,14 +29,14 @@ export default function Home() {
                   className="rounded-xl flex object-contain h-full w-full xl:w-auto brightness-90"
                   quality={80}
                 ></Image>
-                <div className="flex flex-col xl:h-64 text-start w-full justify-center space-y-2 rounded max-w-full">
+                <div className="flex flex-col xl:h-64 text-start w-full justify-center space-y-2 rounded">
                   <div className="text-neutral-400 uppercase">
                     Full stack developer
                   </div>
                   <div className="text-neutral-100 text-4xl font-bold">
                     Dante Rivarola Dinatale.
                   </div>
-                  <div className="flex flex-col gap-4 text-neutral-400">
+                  <div className="flex flex-col gap-4 text-neutral-400 ">
                     <div className="">I am a full stack dev based in Paraguay with <strong>+1</strong> years of experience.</div>
                     <div className="inline-flex xl:justify-start justify-between items-center gap-2">
                       <a href="https://react.dev/" className="z-50" target="_blank" title="React.Js"><FaReact className="w-10 h-10"/></a>
