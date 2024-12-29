@@ -14,6 +14,11 @@ import { BiLogoCPlusPlus } from "react-icons/bi";
 
 
 export default function Home() {
+  const currentWork = "OneHQ";
+  const experienceYears = "1";
+  const expertise = "Full Stack Developer";
+  const currentCharge = "Front End Developer";
+
   return (
     <div className="flex flex-col xl:space-y-4 items-center w-auto min-h-screen max-w-screen">
       <div className="flex flex-col min-[1700px]:w-8/12 w-11/12 items-center justify-center space-y-4 xl:items-start h-fit pt-20">
@@ -31,13 +36,13 @@ export default function Home() {
                 ></Image>
                 <div className="flex flex-col xl:h-64 text-start w-full justify-center space-y-2 rounded">
                   <div className="text-neutral-400 uppercase">
-                    Full stack developer
+                    {expertise}
                   </div>
                   <div className="text-neutral-100 text-4xl font-bold">
                     Dante Rivarola Dinatale.
                   </div>
                   <div className="flex flex-col gap-4 text-neutral-400 ">
-                    <div className="">I am a full stack dev based in Paraguay with <strong>+1</strong> years of experience.</div>
+                    <div className="">I am a {expertise.toLowerCase()} based in Paraguay with <strong>+{experienceYears}</strong> years of experience.</div>
                     <div className="inline-flex xl:justify-start justify-between items-center gap-2">
                       <a href="https://react.dev/" className="z-50" target="_blank" title="React.Js"><FaReact className="w-10 h-10"/></a>
                       <a href="https://angular.dev/overview" className="z-50" target="_blank" title="Angular"><FaAngular className="w-10 h-10"/></a>
@@ -106,10 +111,10 @@ export default function Home() {
                   Currently working at
                 </div>
                 <div className="text-neutral-100 text-4xl xl:text-6xl font-bold">
-                  OneHQ
+                  {currentWork}
                 </div>
                 <div className="text-neutral-100/50">
-                  as a full-time <strong> full stack developer</strong>
+                  as a full-time <strong> {currentCharge.toLowerCase()}</strong>
                 </div>
                 <div className="inline-flex gap-2 py-2 items-center justify-start text-white w-full">
                   <FaReact className="w-10 h-10 z-50 cursor-pointer" title="React.Js"/>
@@ -126,19 +131,19 @@ export default function Home() {
                 className="rounded-xl object-contain h-full w-full xl:w-auto"
                 quality={80}
               ></Image>
-              <div className="flex flex-col xl:hidden xl:h-64 w-full text-center justify-center px-1 xl:space-y-3 space-y-1 rounded max-w-full">
+              <div className="flex flex-col xl:hidden xl:h-64 w-full justify-center px-1 xl:space-y-3 space-y-1 rounded max-w-full">
                 <div className="text-neutral-100/50 uppercase">
                   Currently working at
                 </div>
                 <div className="text-neutral-100 text-5xl xl:text-6xl font-bold">
-                  OneHQ
+                  {currentWork}
                 </div>
                 <div className="text-neutral-100/50">
-                  as a full-time <strong> full stack developer</strong>
+                  as a full-time <strong> {currentCharge.toLowerCase()}</strong>
                 </div>
               </div>
-              <div className="flex xl:hidden flex-col items-center w-full xl:absolute bottom-4 right-9">
-                <div className="inline-flex gap-5 items-center justify-center text-white w-full">
+              <div className="flex xl:hidden flex-col w-full xl:absolute bottom-4 right-9">
+                <div className="inline-flex gap-5 items-centerw-full justify-between text-white">
                   <FaReact className="w-10 h-10"/>
                   <SiTypescript className="w-10 h-10"/>
                   <FaCss3Alt className="w-10 h-10"/>
@@ -175,7 +180,7 @@ export default function Home() {
                 className="rounded-xl object-contain h-full w-full xl:w-auto"
                 quality={80}
               ></Image>
-              <div className="flex flex-col xl:hidden xl:h-64 w-full xl:text-start text-center justify-center px-1 xl:space-y-3 space-y-1 rounded max-w-full">
+              <div className="flex flex-col xl:hidden xl:h-64 w-full justify-center px-1 xl:space-y-3 space-y-1 rounded max-w-full">
               <div className="text-neutral-100/50 uppercase">
                   Currently studying at
                 </div>
@@ -186,8 +191,8 @@ export default function Home() {
                   to become a <strong>software engineer</strong> 
                 </div>
               </div>
-              <div className="flex xl:hidden flex-col items-center w-full xl:absolute bottom-4 right-9">
-                <div className="inline-flex gap-5 items-center justify-center text-white">
+              <div className="flex xl:hidden flex-col items-start w-full xl:absolute bottom-4 right-9">
+                <div className="inline-flex gap-5 items-center w-full justify-between text-white">
                   <FaPython className="w-10 h-10"/>
                   <FaHtml5 className="w-10 h-10"/>
                   <FaJava className="w-10 h-10"/>
@@ -201,38 +206,75 @@ export default function Home() {
         <div className="w-full">
           <XpCard className="w-full" title="Proyects">
             <div className="border w-full grid xl:grid-cols-4 grid-cols-1 gap-3">
-              <Project title="Nasa Space Apps Challenge" src="/yvyryryi.png" href="https://yvyryryi.vercel.app/" description="International NASA Hackathon, interplanetary seismic detection project using data from the Moon and Mars as examples. I was in charge of the web design and frontend development of the project using NextJS 14, TypeScript, and Tailwind CSS.">
+            <Project 
+                title="OneHQ New Website (Work In Progress)" 
+                src="/onehq.png" 
+                href="https://onehq.vercel.app/" 
+                description="(Work In Progress) Large scale website for insurance bussiness software company OneHQ, made with NextJS, React, Styled Components, Framer Motion and CSS.">
+                <SiNextdotjs className="w-10 h-10"/>
+                <SiTypescript className="w-9 h-9"/>
+                <FaCss3Alt className="w-10 h-10"/>
+                <FaReact className="w-10 h-10"/>
+              </Project>
+              <Project 
+                title="Nasa Space Apps Challenge" 
+                src="/yvyryryi.png" 
+                href="https://yvyryryi.vercel.app/" 
+                description="International NASA Hackathon, interplanetary seismic detection project using data from the Moon and Mars as examples. I was in charge of the web design and frontend development of the project using NextJS 14, TypeScript, and Tailwind CSS.">
                 <SiNextdotjs className="w-10 h-10"/>
                 <SiFastapi className="w-10 h-10"/>
                 <RiTailwindCssFill className="w-10 h-10"/>
               </Project>
-              <Project title="Weather App with location" href="https://new-clima-app.vercel.app/" src="/clima.png" description="Weather forecast app built with NextJS 14, TypeScript, and APIs from OpenWeather, JS Geolocator, and OpenCage Data for retrieving forecasts and location data. Developed from scratch, it features a responsive and minimalist design using Tailwind CSS.">
+              <Project 
+                title="Weather App with location" 
+                href="https://new-clima-app.vercel.app/" 
+                src="/clima.png" 
+                description="Weather forecast app built with NextJS 14, TypeScript, and APIs from OpenWeather, JS Geolocator, and OpenCage Data for retrieving forecasts and location data. Developed from scratch, it features a responsive and minimalist design using Tailwind CSS.">
                 <SiNextdotjs className="w-10 h-10"/>
                 <RiTailwindCssFill className="w-10 h-10"/>
                 <SiTypescript className="w-9 h-9"/>
                 <FaLocationDot className="w-10 h-10"/>
               </Project>
-              <Project title="Trello App Clone" src="/trello.png" href="https://trello-clone-nextjs-red.vercel.app/dashboard" description="A Trello clone app, focused on layout and drag n' drop functionality. Built with NextJS and TypeScript, styled with Tailwind CSS, and featuring custom components.">
+              <Project 
+                title="Trello App Clone" 
+                src="/trello.png" 
+                href="https://trello-clone-nextjs-red.vercel.app/dashboard" 
+                description="A Trello clone app, focused on layout and drag n' drop functionality. Built with NextJS and TypeScript, styled with Tailwind CSS, and featuring custom components.">
                 <SiNextdotjs className="w-10 h-10"/>
                 <RiTailwindCssFill className="w-10 h-10"/>
                 <SiTypescript className="w-9 h-9"/>
               </Project>
-              <Project title="Angular E-commerce App" src="/store.png" href="https://store-dante.vercel.app/" description="E-commerce project built with Angular 18, Tailwind and TypeScript, featuring filters, categories, a cart system and API calls to 'FakeStore API' from platzi for retrieving fake products.">
+              <Project 
+                title="Angular E-commerce App" 
+                src="/store.png" 
+                href="https://store-dante.vercel.app/" 
+                description="E-commerce project built with Angular 18, Tailwind and TypeScript, featuring filters, categories, a cart system and API calls to 'FakeStore API' from platzi for retrieving fake products.">
                 <FaAngular className="w-10 h-10"/>
                 <RiTailwindCssFill className="w-10 h-10"/>
                 <SiTypescript className="w-9 h-9"/>              
               </Project>
-              <Project title="Auth Template for NextJS" href="https://lucia-auth-template-next.vercel.app/" src="/lucia.png" description="This is a NextJS 14 template with Lucia-auth made by me for future projects. Lucia is an authentication library that simplifies session management, emphasizing code clarity.">
+              <Project 
+                title="Auth Template for NextJS" 
+                href="https://lucia-auth-template-next.vercel.app/" 
+                src="/lucia.png" 
+                description="This is a NextJS 14 template with Lucia-auth made by me for future projects. Lucia is an authentication library that simplifies session management, emphasizing code clarity.">
                 <SiNextdotjs className="w-10 h-10"/>
                 <RiTailwindCssFill className="w-10 h-10"/>
                 <SiTypescript className="w-9 h-9"/>
               </Project>
-              <Project title="TODO App with Local Storage" src="/todo.png" href="https://mynewtodoapp-46e40.web.app/" description="TODO app for task organization, featuring filters, task selection, and editing capabilities. Built with Angular 17, TypeScript, and CSS. All your todos are stored in your local storage.">
+              <Project 
+                title="TODO App with Local Storage" 
+                src="/todo.png" href="https://mynewtodoapp-46e40.web.app/" 
+                description="TODO app for task organization, featuring filters, task selection, and editing capabilities. Built with Angular 17, TypeScript, and CSS. All your todos are stored in your local storage.">
                 <FaAngular className="w-10 h-10"/>
                 <FaCss3Alt className="w-10 h-10"/>
                 <SiTypescript className="w-9 h-9"/> 
               </Project>
-              <Project title="Anoto Landing Page" href="https://anoto-app.vercel.app/" src="/anoto.png" description="Landing page for the future disruptive company in the tech sector, Anoto Software, high-quality custom software. Built with NextJS 14 and styled with Tailwind CSS and TypeScript.">
+              <Project 
+                title="Anoto Landing Page" 
+                href="https://anoto-app.vercel.app/" 
+                src="/anoto.png" 
+                description="Landing page for the future disruptive company in the tech sector, Anoto Software, high-quality custom software. Built with NextJS 14 and styled with Tailwind CSS and TypeScript.">
                 <SiNextdotjs className="w-10 h-10"/>
                 <RiTailwindCssFill className="w-10 h-10"/>
                 <SiTypescript className="w-9 h-9"/>
@@ -250,7 +292,7 @@ export default function Home() {
             <div className="flex xl:flex-row flex-col space-y-4 xl:space-y-0 xl:space-x-4 p-4 w-full">
               <div className="flex flex-col p-10 space-y-4 items-center justify-center grow rounded-2xl">
                 <div className="xl:text-8xl text-8xl font-extrabold">
-                  +1
+                  +{experienceYears}
                 </div>
                 <div className="font-bold text-sm xl:text-base uppercase text-neutral-200 text-center">
                   years experience in software development
