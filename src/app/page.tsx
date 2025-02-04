@@ -104,19 +104,19 @@ export default function Home() {
         </div>
 
         <div className="flex xl:flex-row flex-col gap-4 w-full grow xl:h-full">
-          <Card className="xl:grow xl:w-fit w-full bg-gradient-to-tl relative border-gray-950" color=" from-neutral-100 relative-card to-white" href="https://www.linkedin.com/company/onehq/posts/?feedView=all" newTab={true}>
+          <Card className="xl:grow xl:w-fit w-full bg-gradient-to-tl relative border-gray-950" color="from-blue-950 relative-card to-blue-500" href="https://www.linkedin.com/company/onehq/posts/?feedView=all" newTab={true}>
             <div className="flex xl:flex-row flex-col space-y-5 xl:space-x-6 xl:space-y-0 p-5 items-center max-w-full xl:justify-center xl:h-64 justify-center w-full">
               <div className="xl:flex flex-col hidden w-full text-start justify-center px-1 xl:space-y-2 space-y-2 rounded max-w-full">
-                <div className="text-[#3981e1] uppercase">
+                <div className="text-white uppercase">
                   Currently working at
                 </div>
-                <div className="text-[#3981e1] text-4xl xl:text-6xl font-bold">
+                <div className="text-white text-4xl xl:text-6xl font-bold">
                   {currentWork}
                 </div>
-                <div className="text-[#3981e1]">
+                <div className="text-white">
                   as a full-time <strong> {currentCharge.toLowerCase()}</strong>
                 </div>
-                <div className="inline-flex gap-2 py-2 items-center justify-start text-[#3981e1] w-full">
+                <div className="inline-flex gap-2 py-2 items-center justify-start text-white w-full">
                   <FaReact className="w-10 h-10 z-50 cursor-pointer" title="React.Js"/>
                   <SiTypescript className="w-10 h-10 z-50 cursor-pointer" title="TypeScript"/>
                   <FaCss3Alt className="w-10 h-10 z-50 cursor-pointer" title="CSS"/>
@@ -124,26 +124,26 @@ export default function Home() {
                 </div>
               </div>
               <Image
-                src={"/logo.png"}
+                src={"/onehq.jpeg"}
                 alt="onehq_logo"
-                width={800}
-                height={800}
-                className="rounded-xl object-contain h-full w-full xl:w-36"
+                width={1000}
+                height={1000}
+                className="rounded-xl object-contain h-full w-full xl:w-auto"
                 quality={80}
               ></Image>
               <div className="flex flex-col xl:hidden xl:h-64 w-full justify-center px-1 xl:space-y-3 space-y-1 rounded max-w-full">
-                <div className="text-[#3981e1] uppercase">
+                <div className="text-white uppercase">
                   Currently working at
                 </div>
-                <div className="text-[#3981e1] text-5xl xl:text-6xl font-bold">
+                <div className="text-white text-5xl xl:text-6xl font-bold">
                   {currentWork}
                 </div>
-                <div className="text-[#3981e1]">
+                <div className="text-white">
                   as a full-time <strong> {currentCharge.toLowerCase()}</strong>
                 </div>
               </div>
               <div className="flex xl:hidden flex-col w-full xl:absolute bottom-4 right-9">
-                <div className="inline-flex gap-5 items-centerw-full justify-between text-[#3981e1]">
+                <div className="inline-flex gap-5 items-centerw-full justify-between text-white">
                   <FaReact className="w-10 h-10"/>
                   <SiTypescript className="w-10 h-10"/>
                   <FaCss3Alt className="w-10 h-10"/>
