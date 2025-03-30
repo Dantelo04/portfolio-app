@@ -30,7 +30,7 @@ export default function Navbar(){
                 </button>
             </div>
             <div className={`w-full xl:absolute flex justify-center items-center ${isOpen && 'absolute'} -z-10 xl:left-0`}>
-                <ul className={isOpen ? "xl:flex xl:flex-row flex-col w-fit justify-center text-neutral-400 backdrop-blur-lg hidden min-[1280px]:border gap-20 border-neutral-700/50 rounded-xl text-center px-20 py-2" : "flex xl:flex-row flex-col text-center space-y-5 text-xl xl:space-x-14 text-neutral-300"}>
+                <ul className={isOpen ? "xl:flex xl:flex-row flex-col w-fit justify-center text-neutral-300 backdrop-blur-lg hidden min-[1280px]:border gap-20 border-neutral-700/50 rounded-xl text-center px-20 py-2 bg-neutral-900/40" : "flex xl:flex-row flex-col text-center space-y-5 text-xl xl:space-x-14 text-neutral-300"}>
                     <li className="hover:text-white duration-100 xl:hidden xl:hover:bg-neutral-600"><Link href={"/"} onClick={()=> setOpen(!isOpen)}>Home</Link></li>
                     <li className="hover:text-white duration-100 hidden xl:flex xl:hover:bg-neutral-700 px-2 rounded-xl"><Link href={"/"} className="inline-flex justify-center items-center gap-2">Home <TiHome /></Link></li>
                     <li className="hover:text-white duration-100 xl:hover:bg-neutral-700 px-2 rounded-xl"><a className="inline-flex justify-center items-center gap-2" download={"CV_DANTE_RIVAROLA_DINATALE_ENGLISH"} href={"/CV_DANTE_RIVAROLA_DINATALE_ENGLISH.pdf"}>CV <HiDownload /></a></li>

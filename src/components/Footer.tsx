@@ -8,9 +8,9 @@ import { TbBriefcase2Filled } from "react-icons/tb";
 export default function Footer(){
     return(
         <div className="flex flex-col items-center space-y-9 w-full pt-20 z-30 h-60 justify-center">
-            <div className="text-center hidden xl:inline-flex justify-center items-center gap-2">
+            <a href="mailto:danterivadi.work@gmail.com" className="text-center hover:underline hidden xl:inline-flex justify-center items-center gap-2">
                 danterivadi.work@gmail.com <CgMail className="w-5 h-5"/>
-            </div>
+            </a>
             <ul className="xl:flex xl:flex-row hidden flex-col gap-7 justify-center items-center text-neutral-600">
                 <li className="hover:text-white duration-100"><a download={"CV_DANTE_RIVAROLA_DINATALE_ENGLISH"} href={"/CV_DANTE_RIVAROLA_DINATALE_ENGLISH.pdf"} className="inline-flex justify-center items-center gap-2">CV <HiDownload /></a></li>
                 <li className="hover:text-white duration-100"><Link href={"https://github.com/Dantelo04"} className="inline-flex justify-center items-center gap-2">Proyects <FaGithub /></Link></li>

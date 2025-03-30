@@ -11,6 +11,7 @@ import XpCard from "@/components/XpCard";
 import Project from "@/components/Project";
 import { FaArrowRightLong, FaLocationDot } from "react-icons/fa6";
 import { BiLogoCPlusPlus } from "react-icons/bi";
+import { Tag } from "@/components/Tag";
 
 
 export default function Home() {
@@ -35,9 +36,9 @@ export default function Home() {
                   quality={80}
                 ></Image>
                 <div className="flex flex-col xl:h-64 text-start w-full justify-center space-y-2 rounded">
-                  <div className="text-neutral-400 uppercase">
+                  <Tag>
                     {expertise}
-                  </div>
+                  </Tag>
                   <div className="text-neutral-100 text-4xl font-bold">
                     Dante Rivarola Dinatale.
                   </div>
@@ -107,9 +108,9 @@ export default function Home() {
           <Card className="xl:grow xl:w-fit w-full bg-gradient-to-tl relative border-gray-950" color="from-blue-950 relative-card to-blue-500" href="https://www.linkedin.com/company/onehq/posts/?feedView=all" newTab={true}>
             <div className="flex xl:flex-row flex-col space-y-5 xl:space-x-6 xl:space-y-0 p-5 items-center max-w-full xl:justify-center xl:h-64 justify-center w-full">
               <div className="xl:flex flex-col hidden w-full text-start justify-center px-1 xl:space-y-2 space-y-2 rounded max-w-full">
-                <div className="text-white uppercase">
-                  Currently working at
-                </div>
+                <Tag>
+                  CURRENT JOB
+                </Tag>
                 <div className="text-white text-4xl xl:text-6xl font-bold">
                   {currentWork}
                 </div>
@@ -124,17 +125,17 @@ export default function Home() {
                 </div>
               </div>
               <Image
-                src={"/onehq.jpeg"}
+                src={"/onehqlogo.png"}
                 alt="onehq_logo"
                 width={1000}
                 height={1000}
-                className="rounded-xl object-contain h-full w-full xl:w-auto"
+                className="rounded-xl object-contain h-full w-full xl:w-auto bg-white border"
                 quality={80}
               ></Image>
               <div className="flex flex-col xl:hidden xl:h-64 w-full justify-center px-1 xl:space-y-3 space-y-1 rounded max-w-full">
-                <div className="text-white uppercase">
-                  Currently working at
-                </div>
+                <Tag>
+                  MY JOB
+                </Tag>
                 <div className="text-white text-5xl xl:text-6xl font-bold">
                   {currentWork}
                 </div>
@@ -156,9 +157,9 @@ export default function Home() {
           <Card color="from-blue-900 to-sky-950" className="xl:grow xl:w-fit w-full bg-gradient-to-tl relative-card border-gray-800 border-0" href="https://www.pol.una.py/" newTab={true}>
             <div className="flex xl:flex-row flex-col space-y-5 xl:space-x-6 xl:space-y-0 p-5 items-center max-w-full xl:justify-center xl:h-64 justify-center w-full">
               <div className="xl:flex flex-col hidden w-full text-start justify-center px-1 xl:space-y-2 space-y-2 rounded max-w-full">
-              <div className="text-neutral-100/50 uppercase">
-                  Currently studying at
-                </div>
+                <Tag>
+                  STUDIES
+                </Tag>
                 <div className="text-neutral-100 text-4xl xl:text-6xl font-bold">
                   FP-UNA
                 </div>
@@ -181,9 +182,9 @@ export default function Home() {
                 quality={80}
               ></Image>
               <div className="flex flex-col xl:hidden xl:h-64 w-full justify-center px-1 xl:space-y-3 space-y-1 rounded max-w-full">
-              <div className="text-neutral-100/50 uppercase">
-                  Currently studying at
-                </div>
+                <Tag>
+                  MY STUDIES
+                </Tag>
                 <div className="text-neutral-100 text-5xl xl:text-6xl font-bold">
                   FP-UNA
                 </div>
