@@ -17,7 +17,6 @@ import {
 } from "react-icons/fa";
 import {
   SiAmazonwebservices,
-  SiAwsamplify,
   SiFastapi,
   SiMongodb,
   SiNextdotjs,
